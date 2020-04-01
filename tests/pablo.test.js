@@ -22,7 +22,6 @@ describe("Shorten Anonymous", () => {
         await page.waitForSelector('input.result-box');
         const val = await page.$eval('input.result-box', el => el.value);
         expect(val).toMatch('http://polr.web-74.com/' + urlShort);
-        await page.screenshot({path: './tests/img/shorten-edit3.png'});
     }, timeout);
 
 

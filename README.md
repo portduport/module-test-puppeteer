@@ -3,7 +3,7 @@ Tests avec puppeteer
 
 Repo cloned from https://github.com/le-campus-numerique/module-test-puppeteer - Based on the work done by Philippe Le Van
 
-[![Build Status](https://travis-ci.org/portduport/module-test-puppeteer.svg?branch=master)](https://travis-ci.org/portduport/module-test-puppeteer)
+[![Build Status](https://travis-ci.org/portduport/module-test-puppeteer.svg?branch=master)](https://travis-ci.org/portduport/module-test-puppeteer) [![Coverage Status](https://coveralls.io/repos/github/portduport/module-test-puppeteer/badge.svg?branch=master)](https://coveralls.io/github/portduport/module-test-puppeteer?branch=master)
 
 Quick start
 -----------
