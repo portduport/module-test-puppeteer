@@ -9,7 +9,7 @@ describe("Shorten Anonymous", () => {
     test('options shorten', async () => {
         await page.goto('http://polr.web-74.com');
         await page.waitForSelector('.long-link-input');
-        await page.type('.long-link-input', 'https://app.campus-skills.com/');
+        await page.type('.long-link-input', 'https://app.campus-skills.com/test');
         await page.screenshot({path: './tests/img/shorten-edit1.png'});
         await page.waitForSelector('#show-link-options');
         await page.$eval( '#show-link-options', el => el.click() );
@@ -22,6 +22,7 @@ describe("Shorten Anonymous", () => {
         await page.waitForSelector('input.result-box');
         const val = await page.$eval('input.result-box', el => el.value);
         expect(val).toMatch('http://polr.web-74.com/' + urlShort);
+        await page.screenshot({path: './tests/img/shorten-edit3.png'});
     }, timeout);
 
 
