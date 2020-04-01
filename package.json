@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "test": "./node_modules/.bin/jest"
+    "test": "./node_modules/.bin/jest",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "engines": {
     "node": "8.*",
